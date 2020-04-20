@@ -1,7 +1,8 @@
 def put_n(text, n)
+  n = n.to_i
   raise ArgumentError, 'It has to be a Integer Number' unless n.is_a? Integer
 
-  raise ArgumentError, 'The number have to be Positive' if n.negative?
+  raise ArgumentError, 'The number have to be Positive' if n.zero? || n.negative?
 
   n.times { puts text }
 end
