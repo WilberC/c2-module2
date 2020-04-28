@@ -7,6 +7,6 @@
 class IdealGasLaw
   def calculate_pressure(chemical_amount, temperature, volume)
     ideal_gas_constant = 8.314
-    (chemical_amount * ideal_gas_constant * temperature) / volume
+    ((chemical_amount * ideal_gas_constant * temperature) / volume).round(2)
   end
 end
